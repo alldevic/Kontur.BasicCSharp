@@ -21,7 +21,7 @@ namespace Names
 				maxYear = Math.Max(maxYear, name.BirthDate.Year);
 			}
 			var years = new string[maxYear - minYear + 1];
-			for (int y = 0; y < years.Length; y++)
+			for (var y = 0; y < years.Length; y++)
 				years[y] = (y + minYear).ToString();
 			var birthsCounts = new double[maxYear - minYear + 1];
 			foreach (var name in names)

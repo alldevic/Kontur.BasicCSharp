@@ -4,41 +4,38 @@ using System.Linq;
 
 namespace Names
 {
-	public static class Program
-	{
-		private static readonly string dataFilePath = "names.txt";
+    public static class Program
+    {
+        private static readonly string dataFilePath = "names.txt";
 
-		private static void Main(string[] args)
-		{
-			NameData[] namesData = ReadData();
-			Charts.ShowHeatmap(HeatmapTask.GetHistogramBirthsPerDate(namesData));
-			// Charts.ShowHistorgam(HistogramSample.GetHistogramBirthsByYear(namesData));
-			Charts.ShowHistorgam(HistogramTask.GetHistogramBirthsPerDay(namesData, "юрий"));
-			Charts.ShowHistorgam(HistogramTask.GetHistogramBirthsPerDay(namesData, "владимир"));
-			// CreativityTask.ShowYourStatistics(namesData);
-			Console.WriteLine();
-		}
+        private static void Main(string[] args)
+        {
+            var namesData = ReadData();
+            Charts.ShowHeatmap(HeatmapTask.GetBirthsPerDateHeatmap(namesData));
+            // Charts.ShowHistorgam(HistogramSample.GetHistogramBirthsByYear(namesData));
+            Charts.ShowHistorgam(HistogramTask.GetBirthsPerDayHistogram(namesData, "юрий"));
+            Charts.ShowHistorgam(HistogramTask.GetBirthsPerDayHistogram(namesData, "владимир"));
+            // CreativityTask.ShowYourStatistics(namesData);
+            Console.WriteLine();
+        }
 
 
-		private static NameData[] ReadData()
-		{
-			string[] lines = File.ReadAllLines(dataFilePath);
-			var names = new NameData[lines.Length];
-			for (int i = 0; i < lines.Length; i++)
-				names[i] = NameData.ParseFrom(lines[i]);
-			return names;
-		}
+        private static NameData[] ReadData()
+        {
+            var lines = File.ReadAllLines(dataFilePath);
+            var names = new NameData[lines.Length];
+            for (var i = 0; i < lines.Length; i++)
+                names[i] = NameData.ParseFrom(lines[i]);
+            return names;
+        }
 
-		// А это более короткая версия ReadData(). Она использует механизм языка под названием Linq
-		// Вы можете познакомиться с ней самостоятельно: https://ulearn.azurewebsites.net/Course/Linq
-		// Освоив LINQ решать задачи подобные NamesTask становится гораздо проще и приятнее.
-		// Но это уже совсем другая история.
-		private static NameData[] ReadData2()
-		{
-			return File
-				.ReadLines(dataFilePath)
-				.Select(NameData.ParseFrom)
-				.ToArray();
-		}
-	}
+        // А это более короткая версия ReadData(). Она использует механизм языка под названием Linq
+        // Вы можете познакомиться с ней самостоятельно: https://ulearn.azurewebsites.net/Course/Linq
+        // Освоив LINQ решать задачи подобные NamesTask становится гораздо проще и приятнее.
+        // Но это уже совсем другая история.
+        private static NameData[] ReadData2()
+        {
+            return File.ReadLines(dataFilePath).Select(NameData.ParseFrom).ToArray();
+        }
+    }
 }

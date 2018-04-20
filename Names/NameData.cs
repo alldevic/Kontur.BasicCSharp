@@ -25,7 +25,7 @@ namespace Names
 
 		public static NameData ParseFrom(string textLine)
 		{
-			string[] parts = textLine.Split('\t');
+			var parts = textLine.Split('\t');
 			const string format = "dd.MM.yyyy";
 			var date = DateTime.ParseExact(parts[0], format, CultureInfo.InvariantCulture);
 			return new NameData(date, parts[1]);
@@ -33,7 +33,7 @@ namespace Names
 
 		public override string ToString()
 		{
-			return String.Format("{0}    {1}", BirthDate.ToString("dd.MM.yyyy"), Name);
+			return $"{BirthDate:dd.MM.yyyy}    {Name}";
 		}
 	}
 }

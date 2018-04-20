@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image", "Image\Image.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseAlternator", "CaseAlternator\CaseAlternator.csproj", "{BEDEB572-2525-4994-A118-19517795F3F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutePlanning", "RoutePlanning\RoutePlanning.csproj", "{96101A99-7963-4880-A2BF-FB52426EFE86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{BEDEB572-2525-4994-A118-19517795F3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEDEB572-2525-4994-A118-19517795F3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEDEB572-2525-4994-A118-19517795F3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96101A99-7963-4880-A2BF-FB52426EFE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96101A99-7963-4880-A2BF-FB52426EFE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96101A99-7963-4880-A2BF-FB52426EFE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96101A99-7963-4880-A2BF-FB52426EFE86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

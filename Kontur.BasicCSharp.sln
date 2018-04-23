@@ -30,6 +30,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutePlanning", "RoutePlann
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocomplete", "Autocomplete\Autocomplete.csproj", "{F849C260-0712-4D37-9273-ADB46B8DCCFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryTasks", "GeometryTasks\GeometryTasks.csproj", "{DB535D2B-D1A6-4B2E-8EAA-732F45581BDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryPainting", "GeometryPainting\GeometryPainting.csproj", "{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,5 +100,13 @@ Global
 		{F849C260-0712-4D37-9273-ADB46B8DCCFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F849C260-0712-4D37-9273-ADB46B8DCCFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F849C260-0712-4D37-9273-ADB46B8DCCFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB535D2B-D1A6-4B2E-8EAA-732F45581BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB535D2B-D1A6-4B2E-8EAA-732F45581BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB535D2B-D1A6-4B2E-8EAA-732F45581BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB535D2B-D1A6-4B2E-8EAA-732F45581BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

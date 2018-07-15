@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryTasks", "GeometryTa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryPainting", "GeometryPainting\GeometryPainting.csproj", "{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clones", "Clones\Clones.csproj", "{7A1C49BA-A936-44CB-B6C9-A28953D325FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1C49BA-A936-44CB-B6C9-A28953D325FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1C49BA-A936-44CB-B6C9-A28953D325FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1C49BA-A936-44CB-B6C9-A28953D325FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1C49BA-A936-44CB-B6C9-A28953D325FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
